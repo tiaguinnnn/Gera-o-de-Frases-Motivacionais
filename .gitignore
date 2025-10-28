@@ -1,0 +1,20 @@
+# Node modules
+/node_modules
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos do S.O.
+.DS_Store
+Thumbs.db
+
+# SQLite Database
+/meubanco.db
+# ou se for um banco de dados de teste (se usar)
+*.sqlite
+*.sqlite3
+
+# Variáveis de Ambiente (muito importante para senhas, se mudar para PostgreSQL/MySQL)
+.env
