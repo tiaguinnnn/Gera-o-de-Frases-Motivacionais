@@ -23,6 +23,12 @@ const db = new sqlite3.Database(DB_SOURCE, (err) => {
                 db.run(insert, ["Não espere por oportunidades extraordinárias. Agarre ocasiões comuns e as torne grandes."]);
                 db.run(insert, ["Comece onde você está. Use o que você tem. Faça o que você pode."]);
                 db.run(insert, ["Acredite que você pode, e você está no meio do caminho."]);
+                db.run(insert, ["Sucesso é a soma de pequenos esforços repetidos dia após dia."]);
+                db.run(insert, ["Pare de ficar esperando pela oportunidade perfeita, crie uma com sua determinação."]);
+                db.run(insert, ["O caminho mais certo de vencer é tentar mais uma vez."]);
+                db.run(insert, ["Sorria para o mundo, e o mundo sorrirá de volta…"]);
+                db.run(insert, ["A paixão e a perseverança abrem portas que antes pareciam fechadas."]);
+                db.run(insert, ["Não desista, supere."]);
             }
         });
     }
