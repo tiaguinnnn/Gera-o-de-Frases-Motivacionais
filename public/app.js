@@ -1,6 +1,3 @@
-// public/app.js
-
-// Garanta que estes IDs estão corretos!
 const fraseDisplay = document.getElementById('fraseDisplay'); 
 const gerarFraseBtn = document.getElementById('gerarFraseBtn');
 
@@ -8,7 +5,6 @@ async function buscarFrase() {
     fraseDisplay.textContent = 'Carregando...'; 
 
     try {
-        // CONFIRA ESTA URL: Deve ser exatamente a que definimos no Node
         const response = await fetch('/api/frases/random'); 
         
         if (!response.ok) {
@@ -17,8 +13,7 @@ async function buscarFrase() {
 
         const data = await response.json();
         
-        // CONFIRA ESTA LINHA: O nome da propriedade deve ser 'texto'
-        fraseDisplay.textContent = data.texto; // <-- Aqui extraímos a frase
+        fraseDisplay.textContent = data.texto;
 
     } catch (error) {
         console.error('Erro ao buscar frase:', error);
@@ -27,4 +22,4 @@ async function buscarFrase() {
 }
 
 gerarFraseBtn.addEventListener('click', buscarFrase);
-document.addEventListener('DOMContentLoaded', buscarFrase); // Roda ao carregar a página
+document.addEventListener('DOMContentLoaded', buscarFrase);
